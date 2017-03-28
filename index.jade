@@ -1,7 +1,7 @@
 doctype html
 //- basic libraries: jquery(1.10.2), d3js(3.5.4), angularjs(1.3.15), bootstrap(3.0)/semantic-ui(0.9.3/0.9.5)
 //-                  fontawesome(4.4.0), reactjs(0.14.0)
-- var use = { cdn: false, og: false, favicon: true }
+- var use = { cdn: true, og: false, favicon: true }
 - var lib = { jquery: true, d3js: false, angular: true, bootstrap: true, semantic: false, fontawesome: true, reactjs: false, revealjs: false }
 - var assets = "assets"
 - var favicon = "thumbnail.png"
@@ -28,6 +28,24 @@ html(lang="en")
     link(rel="stylesheet",type="text/css",href="index.css")
     script(type="text/javascript",src="index.js")
   body
-    h2 我是這樣的一個主編
-    hr
-    p TBD
+    nav.navbar.navbar-default
+      .container-fluid
+        .navbar-header
+          a.navbar-brand(href="#") 像我這樣的一個主編
+      .collapse.navbar-collapse
+        ul.nav.navbar-nav.navbar-right
+          li: a(href="#") 登入
+    .jumbotron(style="margin:40px")
+       img.pull-right(src="img/avatar.jpg",style="height:240px")
+       h1 像我這樣的一個主編
+       p 加班，是一種無藥可醫的慢性絕症，與工作量不一定有關
+       br
+       .pull-right — 資深媒體人都是抖M。
+       br
+    #root(style="margin:20px")
+      hr
+      p 想要多了解像我這樣的一個主編嗎？現在就看看 #[a(href="https://facebook.com/EditorLikeSiren") 像我這樣的一個主編] 的粉絲專頁吧！
+      hr
+      br
+
+
