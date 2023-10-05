@@ -1,28 +1,33 @@
 {
-  "author": "Kirby Wu",
-  "name": "template",
-  "description": "simple, quick template for bootstrap a page",
-  "version": "0.0.1",
-  "homepage": "https://github.com/zbryikt/template",
+  "name": "sirentoday",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
   "repository": {
     "type": "git",
-    "url": "https://github.com/zbryikt/template"
+    "url": "git+https://github.com/zbryikt/sirentoday.git"
   },
-  "engines": {
-    "node": ">=0.12.6",
-    "npm": ">=1.2.2"
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/zbryikt/sirentoday/issues"
   },
-  "scripts": {
-    "start": "node_modules/.bin/lsc server.ls",
-    "restart": "node_modules\\.bin\\lsc server.ls",
-    "prepare": "npm install chokidar@0.8.0"
-  },
+  "homepage": "https://github.com/zbryikt/sirentoday#readme",
   "dependencies": {
-    "LiveScript": ">=1.2.0",
-    "jade": "=1.11.0",
-    "chokidar": "=1.0.3",
-    "stylus": "=0.50.0",
-    "uglify-js": "=2.4.16",
-    "markdown": "=0.5.0"
+    "@loadingio/bootstrap.ext": "^0.0.10",
+    "@loadingio/debounce.js": "^1.0.1",
+    "@loadingio/ldquery": "^3.0.5",
+    "@zbryikt/template": "^2.3.45",
+    "bootstrap": "^4.6.1",
+    "bootstrap.native": "^3.0.14",
+    "fedep": "^1.1.11",
+    "ldcover": "^3.5.3",
+    "ldiconfont": "^0.2.5",
+    "ldview": "^1.4.0",
+    "proxise": "^1.0.1"
   }
 }
