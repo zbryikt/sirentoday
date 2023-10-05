@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "npx server -r web -o true"
   },
   "repository": {
     "type": "git",
@@ -27,7 +27,23 @@
     "fedep": "^1.1.11",
     "ldcover": "^3.5.3",
     "ldiconfont": "^0.2.5",
+    "ldlazy": "^2.0.0",
     "ldview": "^1.4.0",
     "proxise": "^1.0.1"
+  },
+  "frontendDependencies": {
+    "root": "web/static/assets/lib",
+    "modules": [
+      "@loadingio/bootstrap.ext",
+      "@loadingio/debounce.js",
+      "@loadingio/ldquery",
+      "bootstrap",
+      "bootstrap.native",
+      "ldcover",
+      "ldiconfont",
+      "ldview",
+      "ldlazy",
+      "proxise"
+    ]
   }
 }

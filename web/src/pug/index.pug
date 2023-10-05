@@ -1,0 +1,28 @@
+doctype html
+html
+  head
+    meta(charset="utf-8")
+    link(rel="preconnect",href="https://fonts.googleapis.com")
+    link(rel="preconnect",href="https://fonts.gstatic.com",crossorigin)
+    link(href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300&family=Noto+Serif+TC:wght@900&display=swap",rel="stylesheet")
+    +css([
+      {name: "bootstrap", path: "dist/css/bootstrap.min.css"},
+      {name: "@loadingio/bootstrap.ext"},
+      {name: "ldiconfont"},
+      {name: "ldlazy"},
+    ])
+    style(type="text/css"): include:stylus index.styl
+  body
+    img#hero-image(src="/assets/img/index.svg")
+    .d-flex.g-4.text-lg.mx-auto.w-1024.rwd.justify-content-center.my-5
+      a(href="https://futurecity.cw.com.tw/") #[i.i-globe] 未來城市
+      a(href="https://www.facebook.com/EditorLikeSiren") #[i.i-fb] 像我這樣的一個主編
+
+    +script([
+      {name: "proxise"},
+      {name: "@loadingio/debounce.js"},
+      {name: "@loadingio/ldquery"},
+      {name: "ldview"},
+      {name: "ldlazy"},
+      {name: "ldcover"}
+    ])
