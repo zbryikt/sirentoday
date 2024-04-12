@@ -14,9 +14,12 @@ html
     style(type="text/css"): include:stylus index.styl
   body
     img#hero-image(src="/assets/img/index.svg")
-    .d-flex.g-4.text-lg.mx-auto.w-1024.rwd.justify-content-center.my-5
+    .d-flex.g-4.text-lg.mx-auto.w-1024.rwd.justify-content-center.mt-5
       a(href="https://futurecity.cw.com.tw/") #[i.i-globe] 未來城市
       a(href="https://www.facebook.com/EditorLikeSiren") #[i.i-fb] 像我這樣的一個主編
+    .text-muted.text-sm.d-flex.g-2.justify-content-center.align-items-center
+      img(src="assets/img/loading.io.svg",width="16",height="16",style="width:1em")
+      a(href="https://loading.io/background",target="_blank") SVG Background animated by loading.io #[i.i-chevron-right]
 
     +script([
       {name: "proxise"},
